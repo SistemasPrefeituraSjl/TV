@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+  <title>TV - Prefeitura de São José da Lapa</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main id="login">
+    <div class="login-card">
+      <img class="logo" src="brasao.png" alt="" onerror="this.src='logo.png';this.onerror=null">
+      <div class="brand">Prefeitura Municipal de<br>São José da Lapa/MG</div>
+      <div class="separator"></div>
+      <h1>Digite o código</h1>
+      <form id="codeForm">
+        <input id="codeInput" inputmode="numeric" maxlength="6" placeholder="000000" autocomplete="one-time-code" autofocus>
+        <button type="submit">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          Conectar
+        </button>
+      </form>
+      <p id="message">Aguardando transmissão do operador.</p>
+    </div>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
